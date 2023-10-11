@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*Header Section Start*/
+a{
+    text-decoration:none;
+    color:#fff;
+   }
+header ul li a{
+    font-size:16px;
+    font-weight: 600;
+    margin:0px 3px;
+
+}
+header{
+    width:100%;
+    height:60px;
+    color:#fff;
+    background: #131e3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 125px;
+
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+header ul li .active{
+    color:#fc527d;
+}
+/* Header Section End */
+/* Banner Section Start */
+.banner{
+    padding:80px 135px;
+    width:100%;
+    height: 500px;
+}
+.banner h1{
+    font-size: 44px;
+    font-weight: normal;
+}
+.banner strong{
+    font-size: 26px;
+}
+.banner{
+    background: url('../img/bg-banner1.jpeg');
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+ table{
+    margin-top:100px;
+    background-color: rgb(77, 5, 77);
+    padding:30px 10px;
+}
+table .btn-search{
+    background-color: #e91449;
+    padding:10px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:0px;
+    color:#fff;
+}
+.form table form tr td{
+    margin:0px 10px;
+}
+/* Banner Section End */
+/* Media Queries Section start */
+@media only screen and (max-width: 991px) {
+    header{
+        display: block;
+        height: auto;
+        padding:10px 125px;
+    }
+    
+}
+@media only screen and (max-width: 767px) {
+    header ul li{
+        display:block;
+        margin:5px 0px;
+    }
+}
+/* Media Queries Section End */

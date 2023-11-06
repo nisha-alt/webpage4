@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 *{
     margin:0px;
     padding:0px;
@@ -73,8 +76,8 @@ header ul li .active{
     top:250px;
 }
 .banner form{
-    width:auto;
-    height:150px;
+    width:80%;
+    height:auto;
     background:#5C327A;
 
     position:absolute;
@@ -99,14 +102,14 @@ form .switchButton .active{
 form .searchForm  label{
     display:none;
 }
-form .searchForm input,select{
+form .searchForm input{
     width:200px;
-    height: 30px;
+    height: 40px;
     margin-top:5px;
 }
 form .searchForm button{
-    width:80px;
-    height: 80px;
+    width:70px;
+    height: 70px;
     border-radius: 50%;
     border:none;
     margin-left:30px;
@@ -134,25 +137,26 @@ form .infoForm input[type="checkbox"]{
 /* Fun Section Start */
 .fun{
     width:100%;
-    height:400px;
+    height:auto;
     padding:50px 195px;
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/fun-bg.jpeg');
     background-size: 100% 100%;
 
 }
-.fun ul{
+.fun ul {
  display:flex;
  justify-content: space-between;
+
 }
 .fun ul li{
     list-style-type: none;
-    width:150px;
+    width:200px;
     height:150px;
     background: #000;
     font-size: 50px;
     margin:0px 15px;
     color:#fff;
-    padding-top:15px;
+    padding:15px 20px;
     text-align: center;
 
 }
@@ -173,7 +177,7 @@ form .infoForm input[type="checkbox"]{
 /* NewsLetter Section Start */
 .newsLetter{
     width:100%;
-    height:350px;
+    height:auto;
     background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/news-banner.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -228,21 +232,21 @@ form .infoForm input[type="checkbox"]{
     background: #fff;
 }
 .destination ul li h3{
-    padding:15px 10px;
+    padding:10px 10px;
 }
 .destination span{
     color:#f41950;
     font-weight: normal;
 }
 .destination p{
-    padding:15px 10px;
+    padding:10px 10px;
 }
 
 /* Destination Section End */
 /* HelpForm Section Start */
 .helpForm{
     width:100%;
-    height:250px;
+    height:auto;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('../img/help-banner.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,22 +272,229 @@ form .infoForm input[type="checkbox"]{
 .helpForm button{
     width:200px;
     height:40px;
-   background: #fcae05;
+   background: hsla(39, 96%, 45%, 0.97);
 }
 /* HelpForm Section End */
+/* Blog Section Start */
+.blog{
+    width:100%;
+    height:auto;
+    padding:50px 125px;
+   
+}
+.blog h2{
+    color:#000;
+    margin-bottom: 10px;
+}
+.blog h2+p{
+    text-align: center;
+    padding:0px 100px;
+}
+.blog-content{
+    margin:10px auto;
+    display:flex;
+    justify-content: space-between;
+
+}
+.blog-content img{
+    width:200px;
+    height:200px;
+}
+.blog-content .blog-subcontent{
+    display:flex;
+}
+.blog-content .blog-subcontent h3 span{
+    border-bottom:3px solid rgb(255, 0, 0);
+    padding:0px 5px;
+
+}
+.blog-content .blog-subcontent div{
+    padding:5px 10px;
+}
+/* Blog Section End */
+/* Footer Section Start */
+footer{
+    width:100%;
+    height:auto;
+    padding:50px 125px;
+    background:linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.9)), url('../img/desti7.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color:#fff;
+   
+}
+footer .top-foot{
+    display: flex;
+    justify-content: space-between;
+}
+footer h3{
+    color:#fff;
+}
+
+footer ul li{
+    list-style: none;
+
+}
+footer ul li a span{
+    color:#7c6161
+}
+footer .international div{
+    display: flex;
+    justify-content: space-between;
+}
+footer .international div .inter1{
+    margin-right: 30px;
+}
+footer .bottom-foot{
+    margin-top:50px;
+    
+}
+footer .bottom-foot{
+    display: flex;
+    
+}
+footer .foot-menu ul li{
+    display: inline-block;
+    padding:3px 5px;
+    font-size:18px;
+
+
+}
+footer .socials ul li{
+    display: inline-block
+}
+footer .foot-menu{
+    margin-left: 80px;
+}
+footer .socials{
+    margin-left:150px;
+}
+footer .socials ul li a{
+    font-size: 24px;
+    padding:3px 5px;
+}
+
+/* Footer Section End */
+
 /* Media Queries Section start */
+@media only screen and (max-width:1199)
+{
+    
+    .banner form{
+        width:86%;
+    }
+    .banner form .searchForm input,
+    .banner form .searchForm select{
+        width:18%;
+        
+
+    }
+    .banner form button.submit-btn{
+        float:right !important;
+        margin-left: 0px;
+    }
+}
+
 @media only screen and (max-width: 991px) {
-    header{
-        display: block;
+    header {
         height: auto;
         padding:10px 125px;
+        display: block !important;
+    }
+    .banner form{
+        width:70%;
+    }
+    form .searchForm button{
+        margin-left: 0px;
+    }
+    .fun,.banner,header,.newsLetter,.destination,.helpForm,.blog{
+        padding:50px 50px;
+    }
+    .fun ul li{
+        width:110px;
+        height:115px;
+        font-size: 30px;
+        
+    }
+    .fun ul{ 
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        grid-gap:80px 80px;
+        
+    }
+    .blog-content{
+        display: block;
+    }
+    .blog-subcontent{
+        margin: 15px;
+    }
+    .destination ul{
+        grid-template-columns: 50% 50%;
+    }
+    .newsLetter button{
+        margin-top: 15px;
+        width:400px;
+    }
+    footer{
+        padding:50px 20px;
+        
+    }
+    footer .foot-menu{
+        margin-left: 0px;
+    } 
+    footer .socials{
+        margin-left:0px;
+    }
+    footer .international div{
+        justify-content: flex-start;
     }
     
 }
-@media only screen and (max-width: 767px) {
-    header ul li{
+@media only screen and (max-width:900px){
+   footer .top-foot{
+    display:block;
+
+   }
+}
+@media only screen and (max-width:768px){
+    .banner h1{
+        font-size: 36px;
+        top:40px;
+    }
+    .banner strong{
+        font-size: 24px;
+        top:130px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    /*header ul li{
         display:block;
         margin:5px 0px;
+    }*/
+    .banner form{
+        width:70%;
+        display: block;
+    }
+    .banner form .searchForm input[type=text],.submit-btn{
+        display: block; 
+    
+    }
+    .banner form .searchForm input[type="text"],#trave-start-date,#trave-end-date,select{
+        width:100%;
+    }
+    .banner form .searchForm .submit-btn{
+        width:100%;
+        height:40px;
+        border-radius: 0px;
+        margin-top:5px;
+    }
+    .fun ul li{
+        display:block;
+    }
+    .helpForm form select ,#travel-date,#email,.btn-calci{
+        width:100%;
+        margin-top:5px;
     }
 }
 /* Media Queries Section End */
